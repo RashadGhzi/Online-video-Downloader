@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Poppins:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #ccc !important;
+}
+
+#sec-1 {
+    width: 100%;
+    background: transparent;
+    /* border: 2px solid green; */
+    margin-top: 2em;
+}
+
+.alert {
+    margin-bottom: 0px !important;
+}
+
+.vid-thumb {
+    height: 10em;
+}
+
+.thumb-img {
+    width: 100%;
+    height: 112px;
+    background-position: center;
+    background-size: cover;
+}
+
+.thumb-title {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.thumb-logo .fa-3x {
+    font-size: 2.2em !important;
+    color: #C70039;
+}
+
+.fm-1 {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.f-size {
+    font-size: 14px;
+}
+
+.windows {
+    color: #357EC7;
+}
+
+.apple {
+    color: #000000;
+}
+
+.android {
+    color: #A4C639;
+}
+
+.linux {
+    color: #1F7F39;
+}
+
+.clock {
+    font-size: 26px;
+    color: #0B5345;
+}
+
+.video {
+    font-size: 26px;
+    color: #0B5345;
+}
+
+.infinity {
+    font-size: 26px;
+    color: #0B5345 !important;
+}
+
+.paste {
+    color: #0B5345;
+}
+
+.cog {
+    color: #0B5345;
+}
+
+.download {
+    color: #0B5345;
+}
+
+.yt-logo .youtube {
+    color: #C70039;
+}
+
+#vid_brand {
+    padding: 0 !important;
+}
+
+#vid_resolution {
+    padding: 0 !important;
+}
+
+.fs-sub {
+    font-size: 15px;
+}

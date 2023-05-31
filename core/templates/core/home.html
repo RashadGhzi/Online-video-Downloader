@@ -1,0 +1,93 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block body-content %}
+    <section id="sec-1">
+        <div class="row d-flex justify-content-center align-items-start">
+            <div class="col-sm-6">
+                <div class="alert alert-light text-center fw-bold d-flex align-items-center justify-content-center">
+                    <b class='mx-4 thumb-logo'><i class="fab fa-youtube fa-3x youtube"></i></b>
+                    Download YouTube video online
+                </div>
+                <div class="alert alert-light mt-2 fw-bold">
+                    Download and enjoy your video
+                </div>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div class="input-group mt-1">
+                        <input type="text" name="url" id="link" class="form-control" placeholder="search or paste your facebook link here" aria-label="search or paste your facebook link here" aria-describedby="button-addon2">
+                        <button class="btn btn-secondary text-light" type="button" id="url">get link video</button>
+                    </div>
+                </form>
+                <div class="d-flex align-items-center justify-content-between p-4 bg-light rounded-2 mt-5 yt-logo">
+                    <i class="fab fa-windows fa-3x windows"><div class = "circle"></div></i>
+                    <i class="fab fa-apple fa-3x apple"><div class = "circle"></div></i>
+                    <i class="fab fa-android fa-3x android"><div class = "circle"></div></i>
+                    <i class="fab fa-linux fa-3x linux"><div class = "circle"></div></i>
+                    <i class="fab fa-youtube fa-3x youtube"><div class = "circle"></div></i>
+                </div>
+                <div class="row align-items-center justify-content-center mt-2">
+                    <div class="col-sm-6">
+                        <div class="d-flex flex-column align-items-center justify-content-between p-2 bg-light rounded-2">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-clock clock mx-2"></i>
+                                <div class="fm-1 fw-bold mb-2">Simple and Fast</div>
+                            </div>
+                            <p class="mx-3">HDdownload tool allow you to download Youtube video quickly in a few simple steps with high quality 720p, 1080p, 1440p, 2160p</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex flex-column align-items-center justify-content-between p-2 bg-light rounded-2">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-infinity infinity"></i>
+                                <div class="fm-1 fw-bold mb-2 mx-2">Support many formats</div>
+                            </div>
+                            <p class="mx-3">HDdownload.app supports converter video YouTube to Mp3 and other formats such as 3GP, MP4, WMA, M4A, FLV, WEBM...</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 mt-1">
+                        <div class="d-flex flex-column align-items-center justify-content-between p-2 bg-light rounded-2">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-video video"></i>
+                                <div class="fm-1 fw-bold mb-2 mx-2">Unlimited YouTube download</div>
+                            </div>
+                            <p class="mx-3">HDdownload allow converter video Youtube to Mp3 and download unlimited with the best transfer speed up to 1GB/s.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 mt-2">
+                        <div class="bg-light p-2 fw-bold rounded-2 d-flex justify-content-center fs-5">How to download video from Youtube online</div>
+                    </div>
+                    <div class="col-sm-12 mt-1 mb-5">
+                        <div class="d-flex align-items-center justify-content-between fs-sub">
+                            <div class="d-flex flex-column align-items-center justify-content-between p-2 bg-light rounded-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-paste paste"></i>
+                                    <p class="mx-3 small fm-1">Paste the YouTube link or enter keywords in the search box.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column align-items-center justify-content-between p-2 bg-light rounded-2 mx-1">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-cog cog"></i>
+                                    <p class="mx-3 small fm-1">Select the format to download you want and click the "Get Link" button.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column align-items-center justify-content-between p-2 bg-light rounded-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-download download"></i>
+                                    <p class="mx-3 small fm-1">	Wait a few seconds for the conversion to complete and press the Download.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 d-none" id="vid-item"> 
+                <div id="vid_thumbnail"></div>
+                
+                <div class="row justify-content-center">
+                    <div id="vid_brand"></div>
+                    <div id="vid_resolution"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock body-content %}
